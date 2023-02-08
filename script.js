@@ -53,7 +53,10 @@ console.log();
 function addSongInfo() {
 
 // task 9: declare a variable to save the user input of the image url. Declare three more variables that save user input: One for the song names, one for the artists, and a last one for the song links.
-
+  let nameInput = songName.value;
+  let imgInput = image.value
+  let linkInput = songLink.value;
+  let artistInput = artist.value;
 
 // task 10: use `.push()` to add each input value to the correct array.
 
@@ -76,8 +79,14 @@ function emptyDisplay() {
 function displaySongInfo() {
 
 // task 8: loop through your images array and display the images to your songs in the correct div. Create three more loops. One for the song names, one for the artists, and a last one for the song links.
-
-
+for(let i = 0; i < imageArray.length;i++) {
+ let newImage = document.createElement("img");
+  newImage.src = image[i];
+  displayimage.append(newImage);
+}
+for(let i = 0; i < SongLinkArray.length;i++){
+  let newLink = document.createElement("")
+}
 
 }
 
